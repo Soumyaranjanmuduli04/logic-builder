@@ -1,0 +1,18 @@
+class exprofit
+{
+    public static void main(String[] args)
+    {
+        int arr[]={5,3,1,6,9,7,8};
+        int L=arr.length;
+        int profit=0;
+        for(int i=0;i<L-1;i++)
+        {
+            for( int j=i+1;j<L;j++)
+            {
+                 profit=Math.max(profit,arr[j]-arr[i]);
+            }
+        }
+        System.out.println(profit);
+    }
+}
+    
