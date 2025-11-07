@@ -1,0 +1,25 @@
+class student
+{
+void display()
+{
+System.out.println("no argument");
+}
+void display(int x)
+{
+System.out.println(x);
+}
+void display(float y)
+{
+System.out.println(y);
+}
+}
+class methodoverloading
+{
+public static void main(String[] args)
+{
+student s1=new student();
+s1.display();
+s1.display();
+s1.display();
+}
+}
